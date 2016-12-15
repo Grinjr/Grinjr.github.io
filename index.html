@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type = "text/javascript" src = "https://a.yiff.moe/gokrnj.js">
+    </script>
+</head>
+<body>
+    Budget: <input class="textbox" type="number" id="bn" name="budgetText" required="true"/>
+    <br><br>
+    Anthro: <input class="checkbox" type="checkbox" id="ac" name="anthroCheck" onclick="OnAnthroChecked(this)"/>
+    <br>
+    Color: <input class="checkbox" type="checkbox" id="cc" name="colorCheck" onclick="OnColorChecked(this)"/>
+    <br>
+    Extra Chars: <input class="checkbox" type="checkbox" id="cbc" name="addCharsCheck" onclick="OnAddCharsChecked(this, ca)"/>
+    <br>
+    <input class="textbox" type="number" id="ca" name="charsAmt" min="1" defaultValue="1" disabled="true" placeholder="Amount of Extra Chars" onChange="OnCharsAmtChanged(this)"/>
+    <br><br><br>
+    Total: <input class="text" type="text" id="res" name="results" readOnly="true" size="5"/>
+    <br><br>
+    <input type=button id="tn" name="totals" value="numbers" onclick="Submit(bn, res)" />
+</body>
+</html>
