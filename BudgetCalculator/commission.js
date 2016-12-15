@@ -20,11 +20,11 @@ function OnColorChecked(colorCheckbox) {
 }
 function OnAddCharsChecked(addCharsCheckbox, charsAmt) {
     if (addCharsCheckbox.checked) {
-        charsAmt.disabled = false;
-        extraCharsAmt = additionalCharacters;
+        charsAmt.hidden = false;
+        //extraCharsAmt = additionalCharacters;
         //bns += additionalCharacters;
     } else {
-        charsAmt.disabled = true;
+        charsAmt.hidden = true;
         extraCharsAmt = 0;
         //bns -= additionalCharacters;
     }
@@ -38,4 +38,5 @@ function Submit(budget, total) {
     var extras = (bns + extraCharsAmt) / 100;
     var results = budget.value / (1 + extras);
     total.value = results.toFixed(2);
+    total.disabled = false;
 }
