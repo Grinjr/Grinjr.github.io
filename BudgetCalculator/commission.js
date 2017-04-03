@@ -29,12 +29,12 @@ function OnColorChecked(colorCheckbox) {
 }
 function OnAddCharsChecked(addCharsCheckbox, charsAmt) {
     if (addCharsCheckbox.checked) {
-        charsAmt.disabled = false;
+        charsAmt.hidden = false;
         extraCharsAmt = additionalCharactersPerc;
         extraCharsAdd = additionalCharactersAdd;
         //bns += additionalCharactersPerc;
     } else {
-        charsAmt.disabled = true;
+        charsAmt.hidden = true;
         extraCharsAmt = 0;
         extraCharsAdd = 0;
         //bns -= additionalCharactersPerc;
