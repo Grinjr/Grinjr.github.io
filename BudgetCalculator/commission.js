@@ -34,7 +34,7 @@ function OnAddCharsChecked(addCharsCheckbox, charsAmt) {
         extraCharsAdd = additionalCharactersAdd;
         //bns += additionalCharactersPerc;
     } else {
-        charsAmt.hidden = true;
+        charsAmt.disabled = true;
         extraCharsAmt = 0;
         extraCharsAdd = 0;
         //bns -= additionalCharactersPerc;
