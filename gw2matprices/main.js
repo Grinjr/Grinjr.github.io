@@ -100,7 +100,7 @@ function GetPrices(item, category) {
 	}
 	
 	var itemPriceReq = new XMLHttpRequest();
-	itemPriceReq.open('GET', 'http://www.gw2spidy.com/api/v0.9/json/listings/' + item.info.id + '/sell', false);
+	itemPriceReq.open('GET', 'https://www.gw2spidy.com/api/v0.9/json/listings/' + item.info.id + '/sell', false);
 	itemPriceReq.send(null);
 	
 	if (itemPriceReq.status === 200) {
